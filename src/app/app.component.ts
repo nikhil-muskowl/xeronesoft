@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { WOW } from 'wowjs/dist/wow.min';
 declare var jQuery: any;
 declare var $: any;
+
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
