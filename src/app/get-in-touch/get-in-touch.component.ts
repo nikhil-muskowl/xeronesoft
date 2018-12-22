@@ -100,6 +100,7 @@ export class GetInTouchComponent implements OnInit {
             }
           } else {
             this.messageTitle = 'Sucess!';
+            this.contactForm.reset();
           }
         },
         err => {
