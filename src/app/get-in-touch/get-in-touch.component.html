@@ -1,0 +1,60 @@
+<section class="bg-alt">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-lg-auto text-center">
+        <h2 class="margin-top-0 wow fadeIn">{{heading}}</h2>
+        <hr class="accent">
+        <p>We love feedback. Fill out the form below and we&apos;ll get back to you as soon as possible.</p>
+      </div>
+      <div class="col-lg-10 mx-lg-auto text-center">
+
+        <h2 *ngIf="message">{{message}}</h2>
+
+        <form (ngSubmit)="onSubmit()" [formGroup]="contactForm" class="contact-form row">
+
+          <div class="col-md-4">
+            <div class="form-group" [class.has-error]="formErrors.name">
+              <input type="text" class="form-control" placeholder="Name" formControlName="name">
+              <div *ngIf="formErrors.name" class="text-error">
+                {{formErrors.name}}
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group" [class.has-error]="formErrors.email">
+              <input type="text" class="form-control" placeholder="Email" formControlName="email">
+              <div *ngIf="formErrors.email" class="text-error">
+                {{formErrors.email}}
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group" [class.has-error]="formErrors.contact">
+              <input type="text" class="form-control" placeholder="Phone" formControlName="contact">
+              <div *ngIf="formErrors.contact" class="text-error">
+                {{formErrors.contact}}
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="form-group" [class.has-error]="formErrors.inquiry">
+              <textarea formControlName="inquiry" class="form-control" rows="9" placeholder="Your message here.."></textarea>
+              <div *ngIf="formErrors.inquiry" class="text-error">
+                {{formErrors.inquiry}}
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 ml-md-auto">
+            <label></label>
+            <button type="submit" class="btn btn-outline-dark btn-block btn-lg">Send
+              <i class="ion-android-arrow-forward"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
