@@ -22,13 +22,7 @@ export class AppComponent {
         AOS.refresh();
         new WOW().init();
 
-        new TypeIt('.typed', {
-            strings: ["Softwares.", "Websites.", "Mobile apps."],
-            speed: 200,
-            loop: true,
-            breakLines: false,
-            autoStart: false
-        });
+       
 
         $('.owl-carousel').owlCarousel({
             loop: false,
@@ -64,11 +58,36 @@ export class AppComponent {
         this.Player();
         this.Countdown();
         this.Isotope();
-        var rellax = Rellax(".parallax");
+
+        // var rellax = Rellax(".parallax");
     }
 
     Menu() {
-        var t = $(".menu-toggle"), e = $(".spyre-navbar-overlay"), n = $(".spyre-navbar-nav"), r = $(".search i"), i = $(".navbar-text"); function o() { t.addClass("open"), e.addClass("open"), n.addClass("open"), i.css("z-index", -1) } e.length && t.on({ click: function () { $(this).hasClass("open") ? (n.removeClass("open"), setTimeout(function () { t.removeClass("open"), e.removeClass("open"), i.delay(800).queue(function (t) { $(this).css("z-index", 0), t() }) }, 500), r.length && r.parent().removeClass("open")) : o() } }), r.length && r.on({ click: function () { e.length && o(), setTimeout(function () { r.parent().addClass("open") }, 500) } })
+        var t = $(".menu-toggle"),
+            e = $(".spyre-navbar-overlay"),
+            n = $(".spyre-navbar-nav"), r = $(".search i"),
+            i = $(".navbar-text");
+        function o() {
+            t.addClass("open"),
+                e.addClass("open"), n.addClass("open"), i.css("z-index", -1)
+        }
+        e.length && t.on({
+            click: function () {
+                $(this).hasClass("open") ? (n.removeClass("open"),
+                    setTimeout(function () {
+                        t.removeClass("open"), e.removeClass("open"),
+                            i.delay(800).queue(function (t) { $(this).css("z-index", 0), t() })
+                    }, 500),
+                    r.length && r.parent().removeClass("open")) : o()
+            }
+        }), r.length &&
+            r.on({
+                click: function () {
+                    e.length && o(), setTimeout(function () {
+                        r.parent().addClass("open")
+                    }, 500)
+                }
+            })
     }
 
     DropdownToggle() {

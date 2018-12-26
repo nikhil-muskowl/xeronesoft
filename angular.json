@@ -31,7 +31,7 @@
               "node_modules/animate.css/animate.min.css",
               "node_modules/magnific-popup/dist/magnific-popup.css",
               "src/assets/dist/css/theme.min.css",
-              "node_modules/aos/dist/aos.css",
+              "node_modules/aos/dist/aos.css",                            
               "src/styles.css"
             ],
             "scripts": [
@@ -39,12 +39,12 @@
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/swiper/dist/js/swiper.min.js",
               "node_modules/owl.carousel/dist/owl.carousel.min.js",
-              "node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
+              "node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",              
               "node_modules/wowjs/dist/wow.min.js",
               "node_modules/aos/dist/aos.js",
               "node_modules/popper/index.js",
               "node_modules/rellax/rellax.min.js",
-              "node_modules/modernizr/src/Modernizr.js"
+              "node_modules/modernizr/src/Modernizr.js"           
             ]
           },
           "configurations": {

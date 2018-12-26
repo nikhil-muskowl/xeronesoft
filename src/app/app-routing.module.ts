@@ -7,6 +7,8 @@ import { ServicesComponent } from './services/services.component';
 import { ServiceDetailComponent } from './service-detail/service-detail.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { CareerComponent } from './career/career.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },  
   { path: 'technologies', component: TechnologiesComponent },  
   { path: 'career', component: CareerComponent },  
+  { path: 'portfolio', component: PortfolioComponent },  
+  { path: '**', component: PageNotFoundComponent },  
 ];
 
 @NgModule({

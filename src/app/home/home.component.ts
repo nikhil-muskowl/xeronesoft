@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import 'owl.carousel';
 declare var jQuery: any;
 declare var $: any;
-
+import TypeIt from 'typeit';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -13,6 +13,13 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    new TypeIt('.typed', {
+      strings: ["Softwares.", "Websites.", "Mobile apps."],
+      speed: 200,
+      loop: true,
+      breakLines: false,
+      autoStart: false
+  });
     $('.owl-carousel').owlCarousel({
       loop: false,
       autoplay: true,

@@ -16,6 +16,8 @@ import { ServiceDetailComponent } from './service-detail/service-detail.componen
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 import { CareerComponent } from './career/career.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { CareerComponent } from './career/career.component';
     ServiceDetailComponent,
     TechnologiesComponent,
     GetInTouchComponent,
-    CareerComponent
+    CareerComponent,
+    PageNotFoundComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
