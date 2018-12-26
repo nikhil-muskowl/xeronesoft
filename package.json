@@ -37,6 +37,7 @@
     "owl.carousel": "^2.3.4",
     "popper": "^1.0.1",
     "rxjs": "~6.3.3",
+    "slick-carousel": "^1.8.1",
     "swiper": "^4.4.6",
     "typeit": "^5.10.7",
     "wowjs": "^1.1.3",

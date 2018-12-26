@@ -1,7 +1,0 @@
-jQuery(document).ready(function ($) {
-    'use strict'; var $document = $(document), $yitNavDropdown = $('.yit-nav-dropdown'); var $toggleNav = $('.toggle-nav'), $bar1 = $('.bar-1'), $bar2 = $('.bar-2'), $bar3 = $('.bar-3'), $body = $('body'); function yitTogglenav() { $('body').on('touchstart', function (e) { if ($('body').hasClass('noscroll')) { e.preventDefault(); } }); }
-    yitTogglenav(); $document.on('click', '.nav-toggle-bar', function () { $toggleNav.fadeToggle(500); $toggleNav = $('.toggle-nav'), $bar1.toggleClass('toggle-bar-animate'); $bar2.toggleClass('toggle-bar-animate'); $bar3.toggleClass('toggle-bar-animate'); $body.toggleClass('noscroll'); }); $document.keydown(function (e) { if (27 == e.keyCode) { $('.toggle-nav').fadeOut(500); $bar1.removeClass('toggle-bar-animate'); $bar2.removeClass('toggle-bar-animate'); $bar3.removeClass('toggle-bar-animate'); $body.removeClass('noscroll'); } }); $document.on('click', '.nav-toggle-bar', function () { $(this).parent().toggleClass('js-side-nav-open'); }); $yitNavDropdown.on('click', function () {
-        if (!$(this).hasClass('js-nav-active')) { $yitNavDropdown.removeClass('js-nav-active'); }
-        $(this).toggleClass('js-nav-active');
-    });
-});

@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
       speed: 200,
       loop: true,
       breakLines: false,
-      autoStart: false     
+      autoStart: false
     });
   }
 
