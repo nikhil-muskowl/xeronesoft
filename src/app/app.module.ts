@@ -18,6 +18,7 @@ import { CareerComponent } from './career/career.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
     CareerComponent,
     PageNotFoundComponent,
     PortfolioComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    TestimonialComponent
   ],
   imports: [
     BrowserModule,

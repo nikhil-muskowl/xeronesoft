@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
       loop: true,
       breakLines: false,
       autoStart: false
-  });
+    });
     $('.owl-carousel').owlCarousel({
       loop: false,
       autoplay: true,
@@ -36,6 +36,30 @@ export class HomeComponent implements OnInit {
         },
         1000: {
           items: 1
+        }
+      }
+    });
+
+
+    $('.owl-project').owlCarousel({
+      margin: 30,
+      nav: true,
+      center: true,
+      loop: true,
+      dots: false,
+      autoWidth: true,
+      stagePadding: 170,
+      lazyLoad: true,
+      responsive:
+      {
+        0: {
+          items: 1
+        },
+        576: {
+          items: 3
+        },
+        992: {
+          items: 5
         }
       }
     });

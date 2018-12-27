@@ -39,16 +39,15 @@
                             <li class="spyre-nav-item"><a routerLink="/" class="spyre-nav-link">Home</a></li>
                             <li class="spyre-nav-item dropdown">
                                 <a href="#" class="spyre-nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li class="dropdown-menu-item active"><a routerLink="/" class="dropdown-menu-link">Home</a></li>
                                     <li class="dropdown-menu-item"><a routerLink="/about" class="dropdown-menu-link">About
                                             Us</a></li>
+                                    <li class="dropdown-menu-item"><a routerLink="/services" class="dropdown-menu-link">Services</a></li>
+                                    <li class="dropdown-menu-item"><a routerLink="/portfolio" class="dropdown-menu-link">Portfolio</a></li>
                                 </ul>
                             </li>
-                            <li class="spyre-nav-item"><a routerLink="/about" class="spyre-nav-link">About</a></li>
-                            <li class="spyre-nav-item"><a routerLink="/services" class="spyre-nav-link">Services</a></li>
-                            <li class="spyre-nav-item"><a routerLink="/portfolio" class="spyre-nav-link">Portfolio</a></li>
+                            
                             <li class="spyre-nav-item"><a routerLink="/contact" class="spyre-nav-link">Contact</a></li>
                         </ul>
                     </nav>
@@ -117,8 +116,6 @@
 <!-- Main Content -->
 <main class="main minh-100vh">
     <router-outlet></router-outlet>
-
-
 </main>
 <!-- End of Main Content -->
 
@@ -177,28 +174,23 @@
                     <div class="col-6 col-lg-3">
                         <h6 class="mb-1 mb-lg-4 text-uppercase">Services</h6>
                         <ul class="pt-2 mb-5 fw-light list-unstyled">
-                            <li class="my-1"><a href="#" class="text-white">Design</a></li>
-                            <li class="my-1"><a href="#" class="text-white">Development</a></li>
-                            <li class="my-1"><a href="#" class="text-white">Themes</a></li>
-                            <li class="my-1"><a href="#" class="text-white">CMS</a></li>
-                            <li class="my-1"><a href="#" class="text-white">Mobile</a></li>
+                            <li class="my-1"><a routerLink="/services" class="text-white">Design</a></li>
+                            <li class="my-1"><a routerLink="/services" class="text-white">Development</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-lg-3">
                         <h6 class="mb-1 mb-lg-4 text-uppercase">About</h6>
                         <ul class="pt-2 mb-5 fw-light list-unstyled">
                             <li class="my-1"><a routerLink="/about" class="text-white">About Us</a></li>
-                            <li class="my-1"><a routerLink="/services" class="text-white">Services</a></li>
                             <li class="my-1"><a routerLink="/portfolio" class="text-white">Portfolio</a></li>
-                            <li class="my-1"><a routerLink="/contact" class="text-white">Contact</a></li>
+
                         </ul>
                     </div>
                     <div class="col-6 col-lg-3">
                         <h6 class="mb-1 mb-lg-4 text-uppercase">Help</h6>
                         <ul class="pt-2 mb-5 fw-light list-unstyled">
-                            <li class="my-1"><a href="#" class="text-white">Sponsors</a></li>
-                            <li class="my-1"><a href="#" class="text-white">FAQs</a></li>
-                            <li class="my-1"><a href="#" class="text-white">Stories & Ideas</a></li>
+                            <li class="my-1"><a routerLink="/contact" class="text-white">Contact</a></li>
+                            <li class="my-1"><a routerLink="/services" class="text-white">Services</a></li>
                         </ul>
                     </div>
                 </div>
@@ -207,7 +199,7 @@
                     <span class="fs--3 fs-lg--2">&copy; XeroneSoft, 2018.</span>
                     <div class="fs--3 fs-lg--2">
                         <a href="#" class="mr-1 text-white">Privacy Policy</a>|
-                        <a href="#" class="ml-1 text-white">Cookie Policy</a>
+                        <a href="#" class="ml-1 text-white">Terms & Conditions</a>
                     </div>
                 </div>
 
