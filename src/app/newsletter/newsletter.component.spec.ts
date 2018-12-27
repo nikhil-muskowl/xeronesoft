@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GetInTouchComponent } from './get-in-touch.component';
+import { NewsletterComponent } from './newsletter.component';
 
-describe('GetInTouchComponent', () => {
-  let component: GetInTouchComponent;
-  let fixture: ComponentFixture<GetInTouchComponent>;
+describe('NewsletterComponent', () => {
+  let component: NewsletterComponent;
+  let fixture: ComponentFixture<NewsletterComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GetInTouchComponent ]
+      declarations: [ NewsletterComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GetInTouchComponent);
+    fixture = TestBed.createComponent(NewsletterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -14,10 +14,10 @@ import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 import { ServiceDetailComponent } from './service-detail/service-detail.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
-import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 import { CareerComponent } from './career/career.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
 
 @NgModule({
   declarations: [
@@ -27,11 +27,11 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     ContactComponent,
     ServicesComponent,
     ServiceDetailComponent,
-    TechnologiesComponent,
-    GetInTouchComponent,
+    TechnologiesComponent,    
     CareerComponent,
     PageNotFoundComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    NewsletterComponent
   ],
   imports: [
     BrowserModule,
