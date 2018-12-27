@@ -15,8 +15,7 @@ export class PortfolioComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $('[data-fancybox="gallery"]').fancybox({     
-    });
+    $('[data-fancybox="gallery"]').fancybox();
   }
 
 }
